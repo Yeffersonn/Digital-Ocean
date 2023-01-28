@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+/* @font-face {
+    font-family: 'CascadiaCode';
+    src: url('/fonts/CascadiaCode.ttf');
+} */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer components {
+    .btn-blue {
+        @apply px-5 py-3 rounded-lg bg-do-blue-light hover:bg-do-blue-medium  text-white font-bold focus:outline-dotted focus:outline-1 focus:outline-do-blue-dark;
+    }
+
+    .btn-white {
+        @apply border  px-5 py-3 rounded-lg hover:bg-sky-100;
+    }
+
+    .btn-white-blue {
+        @apply px-5 py-3 rounded-lg bg-white active:bg-gray-200 font-medium border text-do-blue-light focus:outline-dotted focus:outline-1 focus:outline-do-blue-lighter;
+    }
+
+    .btn-gray {
+        @apply px-3 py-3 bg-gray-200 hover:bg-gray-300 rounded-lg;
+    }
+
+    .panel {
+        @apply bg-white rounded-lg shadow-lg px-5 py-5;
+    }
+
+	.text-link{
+		@apply text-do-blue-light hover:text-do-blue-medium cursor-pointer font-mono font-semibold
+	}
+}
+
+
+body{
+	overflow-x: hidden;
+}
