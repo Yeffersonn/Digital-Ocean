@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postcss-dev": "postcss ./src/tailwind.css -o build.css",
+    "postcss-prod": "postcss ./src/tailwind.css -o build.css"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -17,8 +19,11 @@
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react-swc": "^3.0.0",
     "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
     "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
     "tailwindcss": "^3.2.4",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
-  }}
+  }
+}
